@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comfy House</title>
+    <!-- font awesome -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="nav-bar">
+        <div class="navbar-center">
+            <div class="list-icon-div">
+                <i class="fa fa-list list-icon-i"></i>
+            </div>
+            <img src="../Sprites/logo.svg" alt="">
+            <div class="btn-store-div">
+                <i class="fa fa-cart-plus"></i>
+                <span class="number-products-cart-plus">0</span>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+    <!-- start hero -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="text-hero-div">
+                <h1 class="text-h1">funiture collection</h1>
+            </div>
+            <a href="#list-products">
+                <div class="btn-hero-div">
+                    <button class="btn-hero-button">shop now</button>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- end hero -->
+    <div class="text-intro-product">
+        <p>our products</p>
+    </div>
+
+    <!-- start products-->
+    <div class="content-product" id="list-products">
+        <div class="product-items">
+            <!-- <article class="product-item">
+                <div class="bag-btn">
+                    add in cart
+                </div>
+                <img src="../Sprites/product-1.jpeg" alt="">
+                <div class="detail-item">
+                    <p class="title-item">King Panel Bed</p>
+                    <p class="price-item">$17</p>
+                </div>
+            </article> -->
+        </div>
+    </div>
+    <!-- end products -->
+
+    <!--  cart -->
+    <div class="cart-overlay">
+        <div class="overlay-box">
+            <div class="close">
+                <i class="fa fa-window-close"></i>
+            </div>
+            <div class="text-your-pros">
+                <p>Your Selected Products</p>
+            </div>
+            <div class="list-selected-products">
+<!-- 
+                <article class="selected-product">
+                    <img src="../Sprites/product-1.jpeg" alt="">
+                    <div class="more-details-product">
+                        <p class="name-selected-pro">King Panel Bed</p>
+                        <p class="price-selected-pro">$17</p>
+                        <p class="remove-btn-pro">remove</p>
+                    </div>
+                    <div class="functions-selected-pro">
+                        <i class="fa fa-chevron-up"></i>
+                        <h6 class="amount-selected-pro">0</h6>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </article>
+ -->
+            </div>
+            <div class="overlay-footer">
+                <p>Total: <span class="total-overlay-cart">0</span> <span>$</span></p>
+                <div class="bnt-interact">
+                    <button class="btn btn-danger clear-all">clear all</button>
+                    <button class="btn btn-success purchase-all">purchase</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End Cart -->
+    <!-- end products-->
+
+    <script src="../js/jquery-3.4.0.min.js"></script>
+      <!-- contentful -->
+      <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <!-- app js -->
+    <script src="../js/app.js">
+    </script>
+</body>
+
+</html>

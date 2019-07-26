@@ -1,0 +1,275 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+
+/* start nav bar */
+p{
+    text-transform: capitalize;
+}
+.nav-bar {
+    width: 100%;
+    background: silver;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-center {
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+
+.list-icon-i, .fa-cart-plus {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-store-div {
+    position: relative;
+}
+
+.number-products-cart-plus {
+    position: absolute;
+    top: -1em;
+    right: -.5em;
+    font-size: 1.4em;
+    background: rgb(250, 184, 61);
+    padding: 0 3px;
+    border-radius: 7px;
+    border-right: 1px solid rgb(207, 145, 30);
+}
+
+/* end nav bar */
+
+/* start hero */
+.hero {
+    background: rgb(253, 240, 215) url('https://i.postimg.cc/B672gGVf/hero-bcg.jpg') no-repeat center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    margin: 0 auto;
+    align-items: center;
+    top: calc(50% - 110px);
+    left: calc(50% - 462px);
+    background: white;
+    padding: 2em 5em;
+    opacity: .8;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.text-h1 {
+    font-size: 5em;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.btn-hero-button {
+    font-size: 1.2em;
+    border: none;
+    padding: .5em 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    box-sizing: border-box;
+    background-color: rgb(248, 176, 43);
+    transition: all .5s linear;
+}
+
+.btn-hero-button:hover {
+    background: white;
+    color: orange;
+    border: .2px solid rgb(240, 174, 51);
+}
+
+/* end hero */
+
+.text-intro-product {
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+
+/* start products */
+
+.content-product {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(218, 211, 211); */
+    padding-top: 2em;
+}
+
+.product-items {
+    display: grid;
+    max-width: 1200px;
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-row-gap: 1em;
+    grid-column-gap: 2em;
+    background: white;
+    padding: 2em;
+
+}
+
+.product-item {
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+    overflow: hidden;
+    background: white;
+
+}
+
+.price-item {
+    color: rgb(248, 177, 45);
+}
+
+.product-item img {
+    width: 100%;
+}
+
+.bag-btn {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 140px;
+    background: rgb(241, 179, 64);
+    transition: .5s linear;
+    text-transform: capitalize;
+    font-size: .7em;
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    transform: translateX(101%);
+    cursor: pointer;
+}
+
+.product-item:hover .bag-btn {
+    transform: translateX(10%);
+}
+
+.bag-btn:hover {
+    color: rgb(241, 179, 64);
+    border: .2px solid rgb(241, 179, 64);
+    background: white;
+}
+
+/* end products */
+
+/* start cart overlay */
+
+.cart-overlay {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    z-index: 2;
+    transition: all .5s linear;
+    transform: translateX(101%);
+    overflow: scroll;
+}
+
+.overlay-box {
+    width: 450px;
+    height: 100vh;
+    background: rgb(240, 227, 227);
+    padding: 1em;
+    border: 1px solid pink;
+    overflow: scroll;
+}
+
+.remove-btn-pro, .fa-chevron-up, .fa-chevron-down{
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.text-your-pros {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+.selected-product {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 1em;
+}
+
+.more-details-product {
+    margin-left: 1em;
+    line-height: 14px;
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.more-details-product p:nth-child(1) {
+    color: black;
+    font-weight: 700;
+}
+
+.functions-selected-pro {
+    color: orange;
+    align-items: center;
+    text-align: center;
+}
+
+.more-details-product p:nth-child(2) {
+    color: green;
+}
+
+.more-details-product p:nth-child(3) {
+    color: red;
+}
+
+.selected-product img {
+    width: 70px;
+    height: 70px;
+}
+
+.overlay-footer {
+    text-align: center;
+    font-size: 2em;
+}
+
+.total-overlay-cart {
+    color: orange;
+}
+
+button {
+    text-transform: capitalize;
+    transition: all 1s linear;
+}
+
+button:hover {
+    font-size: 1.1em;
+}
